@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Divisi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header class="header">
+        <div class="logo">
+            <img src="unpam2.png" alt="Logo Universitas Pamulang" class="logo">
+        </div>
+        <h1>UNIVERSITAS PAMULANG</h1>
+        <div class="user-info">
+            <img src="prof.jpg" alt="User Icon" class="user-icon">
+        </div>    
+    </header>
+
+    <aside class="sidebar">
+        <div class="profile">
+            <img src="prof.jpg" alt="Syadewa Putra" class="profile-pic">
+            <p class="role">Administrator</p>
+        </div>
+        <nav>
+            <a href="index.html" class="menu-item">Dashboard</a>
+            <a href="karyawan.html" class="menu-item">Karyawan</a>
+            <a href="jabatan.html" class="menu-item">Jabatan</a>
+            <a href="divisi.html" class="menu-item">Divisi</a>
+            <p class="menu-section">Menu Absensi</p>
+            <a href="absensi.html" class="menu-item">Absensi</a>
+            <a href="izin.html" class="menu-item">Izin</a>
+            <a href="lembur.html" class="menu-item">Lembur</a>
+        </nav>
+    </aside>
+
+    <main class="main-content">
+        <h4>Data Lembur Karyawan 
+            <span class="add-button">✓ Ubah Status</span>
+        </h4>
+        <div class="entries">
+            <span>Show </span>
+            <select class="entries-select" id="entries">
+                <option value="10">10</option>
+                <option value="25">25</option>
+                <option value="50">50</option>
+                <option value="100">100</option>
+            </select>
+            <span> entries</span>
+            <div class="search-container">
+                <label for="search" class="search-label">Search:</label>
+                <input type="text" id="search" placeholder="" class="search-box">
+            </div>
+        </div>        
+        <table class="data-table2">
+            <thead>
+                <tr>
+                    <th>NO</th>
+                    <th>Nama Karyawan</th>
+                    <th>Tanggal</th>
+                    <th>Jam Lembur Mulai || Berakhhir</th>
+                    <th>Keperluan Lembur</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Syadewa</td>
+                    <td>2024-07-12</td>
+                    <td>10:31:00 || 00:00:00</td>
+                    <td>10:31:00</td>
+                    <td>Disetujui</td>
+                </tr>
+                <td>2</td>
+                    <td>Putra</td>
+                    <td>2022-07-10</td>
+                    <td>16:21:52 || 22:23:23</td>
+                    <td>Bosan</td>
+                    <td>Tidak Disetujui</td>
+                <tr>
+                    <td>3</td>
+                    <td>Rapael</td>
+                    <td>2024-06-13</td>
+                    <td>07:15:01 || 16:24:12</td>
+                    <td>615</td>
+                    <td>Disetujui</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Fajar</td>
+                    <td>2024-06-12</td>
+                    <td>15:02:53 || 18:42:24</td>
+                    <td>512</td>
+                    <td>Menunggu Konfirmasi</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Aziz</td>
+                    <td>2024-06-11</td>
+                    <td>15:00:00 || 21.41.52</td>
+                    <td>321</td>
+                    <td>Menunggu Konfirmasi</td>                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Rahmat</td>
+                    <td>2024-12-05</td>
+                    <td>15:12:18 || 19.21.52</td>
+                    <td>Pengganti Absensi</td>
+                    <td>Disetujui</td>
+                </tr>
+            </tbody>
+        </table>
+
+<div class="pagination">
+    <div class="previous">
+        <button class="nav-button">Sebelumnya</button>
+    </div>
+    <div class="page-number">
+        <span class="current-page">1</span>
+    </div>
+    <div class="next">
+        <button class="nav-button">Selanjutnya</button>
+    </div>
+</div>
+
+    </main>
+</body>
+</html>

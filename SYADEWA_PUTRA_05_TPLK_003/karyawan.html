@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Karyawan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+    <header class="header">
+        <div class="logo">
+            <img src="unpam2.png" alt="Logo Universitas Pamulang" class="logo">
+        </div>
+        <h1>UNIVERSITAS PAMULANG</h1>
+        <div class="user-info">
+            <img src="prof.jpg" alt="User Icon" class="user-icon">
+        </div>    
+    </header>
+
+    <aside class="sidebar">
+        <div class="profile">
+            <img src="prof.jpg" alt="Syadewa Putra" class="profile-pic">
+            <p class="role">Administrator</p>
+        </div>
+        <nav>
+            <a href="index.html" class="menu-item">Dashboard</a>
+            <a href="karyawan.html" class="menu-item">Karyawan</a>
+            <a href="jabatan.html" class="menu-item">Jabatan</a>
+            <a href="divisi.html" class="menu-item">Divisi</a>
+            <p class="menu-section">Menu Absensi</p>
+            <a href="absensi.html" class="menu-item">Absensi</a>
+            <a href="izin.html" class="menu-item">Izin</a>
+            <a href="lembur.html" class="menu-item">Lembur</a>
+        </nav>
+    </aside>
+
+    <main class="main-content">
+        <h4>Data Karyawan 
+            <a href="forms.html" class="add-button">+ Tambah Karyawan</a>
+        </h4>
+        <div class="entries">
+            <span>Show </span>
+            <select class="entries-select" id="entries">
+                <option value="10">10</option>
+                <option value="25">25</option>
+                <option value="50">50</option>
+                <option value="100">100</option>
+            </select>
+            <span> entries</span>
+            <div class="search-container">
+                <label for="search" class="search-label">Search:</label>
+                <input type="text" id="search" placeholder="" class="search-box">
+            </div>
+        </div>        
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>NO</th>
+                    <th>KODE</th>
+                    <th>NAMA</th>
+                    <th>EMAIL</th>
+                    <th>ALAMAT</th>
+                    <th>JABATAN</th>
+                    <th>AKSI</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>K001</td>
+                    <td>John Doe</td>
+                    <td>johndoe@example.com</td>
+                    <td>Jl. Kebon Jeruk</td>
+                    <td>Direktur</td>
+                    <td>
+                        <img src="mata2.png" alt="View" class="action-icon">
+                        <img src="edit.png" alt="Edit" class="action-icon">
+                        <img src="salary.png" alt="Flag" class="action-icon">
+                        <img src="x.png" alt="Delete" class="action-icon">
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>K002</td>
+                    <td>Dewa</td>
+                    <td>Dewa@example.com</td>
+                    <td>Jl. Permata Hijau</td>
+                    <td>Direktur</td>
+                    <td>
+                        <img src="mata2.png" alt="View" class="action-icon">
+                        <img src="edit.png" alt="Edit" class="action-icon">
+                        <img src="salary.png" alt="Flag" class="action-icon">
+                        <img src="x.png" alt="Delete" class="action-icon">
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>K003</td>
+                    <td>Putra</td>
+                    <td>Putra@example.com</td>
+                    <td>Jl. Kebayoran</td>
+                    <td>Manajer</td>
+                    <td>
+                        <img src="mata2.png" alt="View" class="action-icon">
+                        <img src="edit.png" alt="Edit" class="action-icon">
+                        <img src="salary.png" alt="Flag" class="action-icon">
+                        <img src="x.png" alt="Delete" class="action-icon">
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>K004</td>
+                    <td>Anto</td>
+                    <td>anto@example.com</td>
+                    <td>Jl. Rawa Mangun</td>
+                    <td>Manajer</td>
+                    <td>
+                        <img src="mata2.png" alt="View" class="action-icon">
+                        <img src="edit.png" alt="Edit" class="action-icon">
+                        <img src="salary.png" alt="Flag" class="action-icon">
+                        <img src="x.png" alt="Delete" class="action-icon">
+                    </td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>K005</td>
+                    <td>Aziz</td>
+                    <td>aziz@example.com</td>
+                    <td>Jl. Gatot Kaca</td>
+                    <td>Manajer</td>
+                    <td>
+                        <img src="mata2.png" alt="View" class="action-icon">
+                        <img src="edit.png" alt="Edit" class="action-icon">
+                        <img src="salary.png" alt="Flag" class="action-icon">
+                        <img src="x.png" alt="Delete" class="action-icon">
+                    </td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>K006</td>
+                    <td>Rahmat</td>
+                    <td>rahmat@example.com</td>
+                    <td>Jl. ukir 1</td>
+                    <td>Staf</td>
+                    <td>
+                        <img src="mata2.png" alt="View" class="action-icon">
+                        <img src="edit.png" alt="Edit" class="action-icon">
+                        <img src="salary.png" alt="Flag" class="action-icon">
+                        <img src="x.png" alt="Delete" class="action-icon">
+                    </td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>K007</td>
+                    <td>Rapel</td>
+                    <td>rapael@example.com</td>
+                    <td>Jl. Gandaria</td>
+                    <td>Staf</td>
+                    <td>
+                        <img src="mata2.png" alt="View" class="action-icon">
+                        <img src="edit.png" alt="Edit" class="action-icon">
+                        <img src="salary.png" alt="Flag" class="action-icon">
+                        <img src="x.png" alt="Delete" class="action-icon">
+                    </td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>K008</td>
+                    <td>Fajar</td>
+                    <td>fajar@example.com</td>
+                    <td>Jl. Bojong Raya</td>
+                    <td>Karyawan</td>
+                    <td>
+                        <img src="mata2.png" alt="View" class="action-icon">
+                        <img src="edit.png" alt="Edit" class="action-icon">
+                        <img src="salary.png" alt="Flag" class="action-icon">
+                        <img src="x.png" alt="Delete" class="action-icon">
+                    </td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>K009</td>
+                    <td>Chandra</td>
+                    <td>Chandra@example.com</td>
+                    <td>Jl. Mawar</td>
+                    <td>Karyawan</td>
+                    <td>
+                        <img src="mata2.png" alt="View" class="action-icon">
+                        <img src="edit.png" alt="Edit" class="action-icon">
+                        <img src="salary.png" alt="Flag" class="action-icon">
+                        <img src="x.png" alt="Delete" class="action-icon">
+                    </td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>K010</td>
+                    <td>Dhimas</td>
+                    <td>Dhimas@example.com</td>
+                    <td>Jl. Lebak Bulus</td>
+                    <td>Karyawan</td>
+                    <td>
+                        <img src="mata2.png" alt="View" class="action-icon">
+                        <img src="edit.png" alt="Edit" class="action-icon">
+                        <img src="salary.png" alt="Flag" class="action-icon">
+                        <img src="x.png" alt="Delete" class="action-icon">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        
+<div class="pagination">
+    <div class="previous">
+        <button class="nav-button">Sebelumnya</button>
+    </div>
+    <div class="page-number">
+        <span class="current-page">1</span>
+    </div>
+    <div class="next">
+        <button class="nav-button">Selanjutnya</button>
+    </div>
+</div>
+
+    </main>
+</body>
+</html>

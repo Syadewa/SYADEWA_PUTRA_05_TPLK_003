@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Divisi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header class="header">
+        <div class="logo">
+            <img src="unpam2.png" alt="Logo Universitas Pamulang" class="logo">
+        </div>
+        <h1>UNIVERSITAS PAMULANG</h1>
+        <div class="user-info">
+            <img src="prof.jpg" alt="User Icon" class="user-icon">
+        </div>    
+    </header>
+
+    <aside class="sidebar">
+        <div class="profile">
+            <img src="prof.jpg" alt="Syadewa Putra" class="profile-pic">
+            <p class="role">Administrator</p>
+        </div>
+        <nav>
+            <a href="index.html" class="menu-item">Dashboard</a>
+            <a href="karyawan.html" class="menu-item">Karyawan</a>
+            <a href="jabatan.html" class="menu-item">Jabatan</a>
+            <a href="divisi.html" class="menu-item">Divisi</a>
+            <p class="menu-section">Menu Absensi</p>
+            <a href="absensi.html" class="menu-item">Absensi</a>
+            <a href="izin.html" class="menu-item">Izin</a>
+            <a href="lembur.html" class="menu-item">Lembur</a>
+        </nav>
+    </aside>
+
+    <main class="main-content">
+        <h2></h2>
+        <h3></h3>
+        <h4>Data Divisi 
+            <span class="add-button">+ Tambah Divisi</span>
+        </h4>
+        <div class="entries">
+            <span>Show </span>
+            <select class="entries-select" id="entries">
+                <option value="10">10</option>
+                <option value="25">25</option>
+                <option value="50">50</option>
+                <option value="100">100</option>
+            </select>
+            <span>           entries</span>
+            <div class="search-container">
+                <label for="search" class="search-label">Search:</label>
+                <input type="text" id="search" placeholder="" class="search-box">
+            </div>
+        </div>        
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>NO</th>
+                    <th>KODE DIVISI</th>
+                    <th>NAMA DIVISI</th>
+                    <th>AKSI</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>DIV001</td>
+                    <td>Manajemen</td>
+                    <td>
+                        <img src="edit.png" alt="Edit" class="action-icon">
+                        <img src="x.png" alt="Delete" class="action-icon">
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>DIV002</td>
+                    <td>Keuangan</td>
+                    <td>
+                        <img src="edit.png" alt="Edit" class="action-icon">
+                        <img src="x.png" alt="Delete" class="action-icon">
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>DIV003</td>
+                    <td>Sumber Daya Manusia</td>
+                    <td>
+                        <img src="edit.png" alt="Edit" class="action-icon">
+                        <img src="x.png" alt="Delete" class="action-icon">
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>DIV004</td>
+                    <td>Produksi</td>
+                    <td>
+                        <img src="edit.png" alt="Edit" class="action-icon">
+                        <img src="x.png" alt="Delete" class="action-icon">
+                    </td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>DIV005</td>
+                    <td>Pemasaran</td>
+                    <td>
+                        <img src="edit.png" alt="Edit" class="action-icon">
+                        <img src="x.png" alt="Delete" class="action-icon">
+                    </td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>DIV006</td>
+                    <td>IT</td>
+                    <td>
+                        <img src="edit.png" alt="Edit" class="action-icon">
+                        <img src="x.png" alt="Delete" class="action-icon">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+<div class="pagination">
+    <div class="previous">
+        <button class="nav-button">Sebelumnya</button>
+    </div>
+    <div class="page-number">
+        <span class="current-page">1</span>
+    </div>
+    <div class="next">
+        <button class="nav-button">Selanjutnya</button>
+    </div>
+</div>
+
+    </main>
+</body>
+</html>
