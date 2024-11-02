@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Izin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <img src="unpam2.png" alt="Logo Universitas Pamulang" class="logo">
+        </div>
+        <h1>UNIVERSITAS PAMULANG</h1>
+        <div class="user-info">
+            <img src="prof.jpg" alt="User Icon" class="user-icon">
+        </div>    
+    </header>
+
+    <aside class="sidebar">
+        <div class="profile">
+            <img src="prof.jpg" alt="Syadewa Putra" class="profile-pic">
+            <p class="role">Administrator</p>
+        </div>
+        <nav>
+            <a href="index.html" class="menu-item">🖥️ Dashboard</a>
+            <p class="menu-section">MENU KARYAWAN</p>
+            <a href="karyawan.html" class="menu-item">👥 Karyawan</a>
+            <a href="jabatan.html" class="menu-item">💼 Jabatan</a>
+            <a href="divisi.html" class="menu-item">📂 Divisi</a>
+            <p class="menu-section">MENU ABSENSI</p>
+            <a href="absensi.html" class="menu-item">📅 Absensi</a>
+            <a href="izin.html" class="menu-item">📝 Izin</a>
+            <a href="lembur.html" class="menu-item">🕦 Lembur</a>
+        </nav>
+    </aside>
+
+    <main class="main-content">
+        <h4>Data Izin Karyawan 
+            <span class="add-button">✓ Ubah Status</span>
+        </h4>
+        <div class="entries">
+            <span>Show </span>
+            <select class="entries-select" id="entries">
+                <option value="10">10</option>
+                <option value="25">25</option>
+                <option value="50">50</option>
+                <option value="100">100</option>
+            </select>
+            <span> entries</span>
+            <div class="search-container">
+                <label for="search" class="search-label">Search:</label>
+                <input type="text" id="search" placeholder="" class="search-box">
+            </div>
+        </div>        
+        <table class="data-table1">
+            <thead>
+                <tr>
+                    <th>NO</th>
+                    <th>Nama Karyawan</th>
+                    <th>Izin</th>
+                    <th>Tanggal</th>
+                    <th>Jam</th>
+                    <th>Keterangan</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Syadewa</td>
+                    <td>Pulang Lebih Awal</td>
+                    <td>2023-04-11</td>
+                    <td>10:31:00</td>
+                    <td>Acara Keluarga</td>
+                    <td>Disetujui</td>
+                </tr>
+                <td>2</td>
+                    <td>Putra</td>
+                    <td>Datang Terlambat</td>
+                    <td>2022-05-10</td>
+                    <td>07:30:18</td>
+                    <td>Kesiangan</td>
+                    <td>Tidak Disetujui</td>
+                <tr>
+                    <td>3</td>
+                    <td>Rapael</td>
+                    <td>Tidak Hadir</td>
+                    <td>2024-06-11</td>
+                    <td>07:15:01</td>
+                    <td>Kecelakaan</td>
+                    <td>Disetujui</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Fajar</td>
+                    <td>Datang Terlambat</td>
+                    <td>2024-08-05</td>
+                    <td>06:54:18</td>
+                    <td>Sakit</td>
+                    <td>Menunggu Konfirmasi</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Aziz</td>
+                    <td>Tidak Hadir</td>
+                    <td>2024-12-05</td>
+                    <td>07:00:18</td>
+                    <td>Acara PKM</td>
+                    <td>Menunggu Konfirmasi</td>                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Rahmat</td>
+                    <td>Tidak Hadir</td>
+                    <td>2024-12-05</td>
+                    <td>07:12:18</td>
+                    <td>Acara PKM</td>
+                    <td>Disetujui</td>
+                </tr>
+            </tbody>
+        </table>
+
+<div class="pagination">
+    <div class="previous">
+        <button class="nav-button">Sebelumnya</button>
+    </div>
+    <div class="page-number">
+        <span class="current-page">1</span>
+    </div>
+    <div class="next">
+        <button class="nav-button">Selanjutnya</button>
+    </div>
+</div>
+
+    </main>
+</body>
+</html>

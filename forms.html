@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tambah Data Karyawan</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        main a {
+            color: black; 
+            text-decoration: none; 
+        }
+        main a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="unpam2.png" alt="Logo Universitas Pamulang" class="logo">
+        </div>
+        <h1>UNIVERSITAS PAMULANG</h1>
+        <div class="user-info">
+            <img src="prof.jpg" alt="User Icon" class="user-icon">
+        </div>
+    </header>
+
+    <aside class="sidebar">
+        <div class="profile">
+            <img src="prof.jpg" alt="Syadewa Putra" class="profile-pic">
+        </div>
+        <nav>
+            <a href="index.html" class="menu-item">🖥️ Dashboard</a>
+            <p class="menu-section">MENU KARYAWAN</p>
+            <a href="karyawan.html" class="menu-item">👥 Karyawan</a>
+            <a href="jabatan.html" class="menu-item">💼 Jabatan</a>
+            <a href="divisi.html" class="menu-item">📂 Divisi</a>
+            <p class="menu-section">MENU ABSENSI</p>
+            <a href="absensi.html" class="menu-item">📅 Absensi</a>
+            <a href="izin.html" class="menu-item">📝 Izin</a>
+            <a href="lembur.html" class="menu-item">🕦 Lembur</a>
+        </nav>
+    </aside>
+
+    <main class="main-content">
+        <h2>
+            Forms | 
+            <a href="index.html">🏠</a> 
+            <span> > </span>
+            <a href="karyawan.html">Karyawan</a>
+            <span> > </span>
+            Tambah Data Karyawan
+        </h2>
+        <div class="form-container">
+            <h3>Tambah Data Karyawan</h3>
+            <form>
+                <div class="form-group">
+                    <label for="nama">Nama Lengkap</label>
+                    <input type="text" id="nama" name="nama" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="jenis_kelamin">Jenis Kelamin</label>
+                    <input type="text" id="jenis_kelamin" name="jenis_kelamin" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="no_hp">No HP</label>
+                    <input type="text" id="no_hp" name="no_hp" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="alamat">Alamat</label>
+                    <input type="text" id="alamat" name="alamat" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="jabatan">Jabatan</label>
+                    <input type="text" id="jabatan" name="jabatan" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="divisi">Divisi</label>
+                    <input type="text" id="divisi" name="divisi" required>
+                </div>
+
+                <div class="button-container">
+                    <button class="btn-simpan">
+                        <img src="sv.png" alt="Simpan">
+                        Simpan
+                    </button>
+                    <button class="btn-batal">
+                        <img src="cc.png" alt="Batal">
+                        Batal
+                    </button>
+                </div>                
+            </form>
+        </div>
+    </main>
+</body>
+</html>
